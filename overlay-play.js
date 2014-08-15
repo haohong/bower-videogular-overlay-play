@@ -21,6 +21,7 @@ angular.module("com.2fdevs.videogular.plugins.overlayplay", [])
 				link: function(scope, elem, attr, API) {
 					function onComplete(target, params) {
 						scope.overlayPlayIcon = {play: true};
+						scope.$apply();
 					}
 
 					function onClickOverlayPlay(event) {
